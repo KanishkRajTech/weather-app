@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #000;
+}
+
+/* containere */
+.container{
+    width: 400px;
+    height: min-content;
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 20px;
+}
+/* search-box */
+.search-box{
+    width: 100%;
+    height: min-content;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+}
+.search-box input{
+    width: 84%;
+    font-size: 20px;
+    text-transform: capitalize;
+    color: #000;
+    background-color: #e6e6e6;
+    padding: 12px 16px;
+    border-radius: 10px;
+}
+.search-box input::placeholder{
+    color: #000;
+}
+.search-box button{
+    height: 46px;
+    width: 46px;
+    border-radius: 50%;
+    font-size: 20px;
+}
+.search-box button:hover{
+    color: #fff;
+    background-color: #000;
+    cursor: pointer;
+}
+
+/* header */
+.weather-body{
+    display: none;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-block: 20px;
+}
+.weather-body img{
+    width: 60%;
+}
+
+/* weather-box */
+.weather-box{
+    margin-block: 20px;
+    text-align: center;
+}
+.weather-box .temperature{
+    font-size: 40px;
+    font-weight: 800;
+    /* position: relative; */
+}
+.weather-box .temperature sup{
+    font-size: 20px;
+    font-weight: 600px;
+    /* position: absolute; */
+}
+.weather-box .description{
+    text-transform: capitalize;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+/*  404 error */
+.location-not-found{
+    margin-top:20px ;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.location-not-found h1{
+    font-size: 20px;
+    color: #808080;
+    margin-block-end: 15px;
+}
+.location-not-found img{
+    width: 60%;
+}
+/* weather-details */
+.weather-details{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.weather-details i{
+    font-size: 36px;
+}
+.weather-details .text{
+    font-size: 18px;
+    margin-left:10px ;
+}
+.humidity, .wind{
+    display: flex;
+    align-items: center;
+}
+.humidity{
+    margin-left: 20px;
+}
+.wind{
+    margin-right: 20px;
+}
+.text span{
+    font-size: 20px;
+    font-weight: 700;
+}

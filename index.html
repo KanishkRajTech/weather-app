@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <!-- add css -->
+    <link rel="stylesheet" href="index.css">
+    <!-- add font awesome cdn-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <!-- container -->
+    <div class="container">
+        <!-- header  -->
+        <div class="header">
+            <!-- search bar -->
+            <div class="search-box">
+                <input type="text" placeholder="Enter Your locatio" class="input-box">
+
+                <button class="fa fa-search" aria-hidden="true" id="searchbtn"></button>
+            </div>
+            <!-- // search bar -->
+        </div>
+
+        <!-- 404 error -->
+        <div class="location-not-found">
+            <h1>Sorry, Location not found!!!</h1>
+            <img src="image/404.png" alt="404 error">
+        </div>
+        <!-- //404 error -->
+
+        <!-- // header -->
+        <div class="weather-body">
+            <img src="image/clear.png" alt="Weather Image" class="weather-image">
+
+            <div class="weather-box">
+                <p class="temperature">0<sup>°C</sup></p>
+                <p class="description">Waiting for location</p>
+            </div>
+
+            <!-- weather-details  -->
+            <div class="weather-details">
+                <div class="humidity">
+                    <i class="fa-sharp fa-solid fa-droplet"></i>
+                    <div class="text">
+                        <span id="humidity">0%</span>
+                        <p>Humidity</p>
+                    </div>
+                </div>
+
+                <div class="wind">
+                    <i class="fa-solid fa-wind"></i>
+                    <div class="text">
+                        <span id="wind-speed">0Km/H</span>
+                        <p>Wind Speed</p>
+                    </div>
+                </div>
+            </div>
+            <!--// weather-details  -->
+
+        </div>
+    </div>
+    <!-- // container -->
+
+    <script src="index.js"></script>
+</body>
+</html>
